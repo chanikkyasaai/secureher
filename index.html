@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureHer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://api.fontshare.com/v2/css?f[]=kola@400&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <!-- Dark Mode and Navbar Customizations -->
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh; /* Ensure the section occupies full viewport height */
+    }
+    h1 {
+      font-family: 'Kola', sans-serif;
+      font-size: 3rem;
+    }
+    .btn-primary {
+      background-color: #1f1f1f;
+      border: none;
+      margin-top: 20px;
+    }
+    .btn-primary:hover {
+      background-color: #333333;
+    }
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-5px);
+      }
+      60% {
+        transform: translateY(-3px);
+      }
+    }
+    .arrow-down {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #ffffff;
+      animation: bounce 2s infinite;
+    }
+    .info-section {
+      padding: 20px;
+      background-color: #1f1f1f;
+      text-align: center;
+    }
+    .info-section p {
+      font-weight: normal;
+      color: #cfcfcf;
+    }
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+    .nav-link {
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s ease-in-out;
+    }
+    .nav-link i {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+    .nav-link span {
+      font-size: 14px;
+      display: none; /* Hidden by default for mobile */
+    }
+    .nav-link:hover {
+      transform: scale(1.1);
+    }
+    .nav-link:hover i, .nav-link:hover span {
+      color: #f39c12;
+    }
+    /* Responsive Styling */
+    @media (min-width: 768px) {
+      .nav-link i {
+        font-size: 28px;
+        margin-right: 12px;
+      }
+      .nav-link span {
+        font-size: 16px;
+        display: inline-block; /* Show text on larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Section -->
+  <div class="main-section">
+    <h1>SecureHer</h1>
+    <a href="#get-started" class="btn btn-primary btn-lg bounce">Get Started</a>
+    <div class="arrow-down">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+
+  <!-- Information Section -->
+  <div class="info-section" id="get-started">
+    <h2>What is SecureHer?</h2>
+    <br>
+    <p>SecureHer is a platform designed to provide women with the tools and resources to ensure their safety in various environments. Our mission is to empower women by connecting them with reliable safety networks and real-time support.</p>
+    <br>
+    <h2>Why SecureHer?</h2><br>
+    <p>Because safety should never be compromised. SecureHer ensures that women have the peace of mind to move freely and confidently, knowing they have access to help when needed.</p>
+    <br><h2>How does SecureHer work?</h2><br>
+    <p>SecureHer uses cutting-edge technology to connect users with a network of verified safety contacts, emergency services, and community support. With a simple tap, help is always available.</p>
+  </div>
+
+  <!-- Bottom Navigation Bar -->
+  <nav class="navbar">
+    <a class="nav-link" href="#">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a class="nav-link" href="#">
+      <i class="fas fa-trophy"></i>
+      <span>Achievements</span>
+    </a>
+    <a class="nav-link" href="#">
+      <i class="fas fa-user"></i>
+      <span>My Space</span>
+    </a>
+    <a class="nav-link" href="#">
+      <i class="fas fa-cog"></i>
+      <span>Settings</span>
+    </a>
+  </nav>
+
+  <!-- Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/src/index.js"></script>
+</body>
+</html>
